@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- ----- the google fonts routine ----------- -->
+
+    <!-- first the preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- then the preload -->
+    <link
+      link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+    />
+
+    <!-- then the stylesheet setting media to print -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <!-- then the noscript fallback -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      />
+    </noscript>
+
+    <!-- custom styles -->
+
+    <link rel="stylesheet" href="./styles/jwc-reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- icon link last -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style></style>
+</head>
+<body>
+
+  <h1>Frontend Mentor | NFT preview card component</h1>
+
+  <main class="container">
+
+    <section class="card">
+
+      <!-- div to contain the image so we can do overlay on hover -->
+      
+      <a href="#" title="View this NFT">
+      <div class="card-image-container"> 
+
+      
+        <img src="./images/image-equilibrium.jpg" alt="" class="card-image">
+      
+        <!-- <div class="card-image-overlay"> -->
+
+        
+        <!-- <img src="./images/icon-view.svg" alt="view icon"> -->
+      </div>
+      </a>
+
+      <h2 class="card-heading"><a href="#" title="Some NFT link">Equilibrium #3429</a></h2>
+
+      <p class="card-desc">Our Equilibrium collection promotes balance and calm.</p>
+
+      <div class="card-details">
+        <div class="card-price">0.041 ETH</div>
+        <div class="card-time">3 days left</div>
+      </div>
+
+      <div class="card-creator">
+        
+        <img src="./images/image-avatar.png" alt="Jules Wyvern" class="card-creator-avatar">
+        
+        <div class="card-creator-credit">Creation of <a href="#" title="Jules Wyvern Profile Page">Jules Wyvern</a></div>
+        
+      </div>
+    </section>
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">GRB</a>.
+  </div>
+</body>
+</html>
